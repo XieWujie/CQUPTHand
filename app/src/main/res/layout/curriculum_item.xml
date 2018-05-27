@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="99dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="98dp">
+
+    <TextView
+        android:id="@+id/lesson_num"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:background="#eef6fd"
+        android:layout_marginBottom="0dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/monDay"
+        android:layout_weight="1"
+        android:layout_marginBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/tuesDay"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/wednesDay"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/thursDay"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/friDay"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/saturDay"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/sunDay"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="98dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

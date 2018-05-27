@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QAHomeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/q_a_notice"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   android:src="@drawable/notice"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp" />
+               <ImageView
+                   android:id="@+id/q_a_filter"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"
+                   android:src="@drawable/filter"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp" />
+           </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:background="#f3f3f3"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="center"
+            android:background="#fefefe"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/q_a_text"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="Q A"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/q_a_arrow_view"
+                android:layout_toRightOf="@+id/q_a_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_me_arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:background="#fefefe"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/q_a_all"
+                android:text="全部"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/q_a_study"
+                android:text="学习"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/q_a_life"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="生活"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/q_a_emotion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="情感"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/q_a_other"
+                android:layout_width="0dp"
+                android:text="其他"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+       <android.support.v7.widget.RecyclerView
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:id="@+id/q_a_head_rc_view"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+    </LinearLayout>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/q_a_fragment"
+        android:name="com.example.xiewujie.cqupthand.fragment.BottomFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</RelativeLayout>

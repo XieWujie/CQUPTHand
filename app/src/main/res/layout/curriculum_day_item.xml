@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/month"
+        android:text="05月"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/monday"
+        android:text="周一"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tuesday"
+        android:text="周二"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/wednesday"
+        android:text="周三"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/thursday"
+        android:text="周四"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/friday"
+        android:text="周五"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/saturday"
+        android:text="周六"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/sunday"
+        android:text="周日"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

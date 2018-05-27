@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/curriculum_view"
+            android:layout_width="23dp"
+            android:src="@drawable/curriculum_src"
+            android:layout_height="23dp" />
+        <TextView
+            android:id="@+id/curriculum_text"
+            android:layout_below="@+id/curriculum_view"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="课表"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/community_view"
+            android:src="@drawable/community_src"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+        <TextView
+            android:id="@+id/community_text"
+            android:visibility="gone"
+            android:layout_below="@+id/community_view"
+            android:text="邮问"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/find_view"
+            android:layout_width="23dp"
+           android:src="@drawable/find_src"
+            android:layout_height="23dp" />
+        <TextView
+            android:id="@+id/find_text"
+            android:visibility="gone"
+            android:gravity="top"
+            android:layout_below="@+id/find_view"
+            android:text="发现"
+           android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/mine_view"
+            android:layout_width="23dp"
+           android:src="@drawable/mine_src"
+            android:layout_height="23dp" />
+        <TextView
+            android:id="@+id/mine_text"
+            android:text="我的"
+            android:visibility="gone"
+            android:layout_below="@+id/mine_view"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

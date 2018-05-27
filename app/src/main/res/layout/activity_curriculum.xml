@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CurriculumActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/week_number"
+                android:text="第一周"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffffff"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_toRightOf="@+id/week_number"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/memo_src"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="21dp"
+                android:layout_height="21dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_of_week"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/curriculum_view_pager"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+</LinearLayout>
+    <fragment
+        android:id="@+id/bottom_fragment"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.xiewujie.cqupthand.fragment.BottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</RelativeLayout>
