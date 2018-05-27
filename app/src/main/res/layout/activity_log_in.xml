@@ -86,6 +86,7 @@
                 android:id="@+id/user_secret_edit"
                 android:layout_toRightOf="@+id/user_secret_view"
                 android:background="@null"
+                android:password="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="5dp"
